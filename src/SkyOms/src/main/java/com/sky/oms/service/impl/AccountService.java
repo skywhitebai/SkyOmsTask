@@ -34,7 +34,7 @@ public class AccountService implements IAccountService {
 		if(commonUserList.size()>0){
 			return BaseResponse.successData(commonUserList.get(1));
 		}
-		return BaseResponse.fail();
+		return BaseResponse.fail("登陆失败，请重新登陆");
 	}
 
 }
